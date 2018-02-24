@@ -1,0 +1,2 @@
+# JavaScratches
+Java codes
