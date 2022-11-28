@@ -15,7 +15,7 @@ import com.sun.jndi.url.iiopname.iiopnameURLContextFactory;
 
 import sun.security.util.Length;
 
-public class Recursion {
+public class Blind {
 
     public static void main(String[] args) {
 	//factorial(5);
