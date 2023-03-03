@@ -30,6 +30,45 @@ public class Blind {
 	
 
     }
+    /*
+     * Input: nums = [4,5,6,7,0,1,2], target = 0
+       Output: 4
+     * 
+     * 
+     * */
+    public static int search(int[] nums, int target) {
+
+	int mid=0;
+	int result=0;
+	int left=0;
+	int right =nums.length-1;
+	//array is not rotated
+	while (left<right) {
+	    mid = left+right/2;
+	    if (nums[mid]==target) {
+		return mid;
+		//go to the right
+	    }else if (target>nums[mid]) {
+		left= mid;
+	    }else if (target<nums[mid]) {
+		right = nums[mid];
+	    }
+	}
+	
+	
+	
+	if (left<right) {
+    if (target>mid) {
+	
+    }
+    
+}
+	
+	
+	return target;
+        
+    }
+    
  public static int maxSubArray(int[] nums) {
      int max= nums[0];
      int subSum=0;
