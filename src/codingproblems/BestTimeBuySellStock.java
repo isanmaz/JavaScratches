@@ -7,9 +7,9 @@ public class BestTimeBuySellStock {
  * 
  * */
     public static void main(String[] args) {
-	int[] input = {2,7,11,15};
+	int[] input = {7,1,5,3,6,4};
 	int profit = maxProfit(input);
-System.out.println(profit);
+	System.out.println(profit);
 
     }
     public static int maxProfit(int[] prices) {
