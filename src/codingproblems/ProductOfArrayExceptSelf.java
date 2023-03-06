@@ -13,8 +13,8 @@ public class ProductOfArrayExceptSelf {
 	int[] isThereDuplicates = productExceptSelf(input);
 	for (int i = 0; i < isThereDuplicates.length; i++) {
 	    System.out.println(isThereDuplicates[i]);
+	    
 	}
-
     }
     
  public static int[] productExceptSelf(int[] nums) {
