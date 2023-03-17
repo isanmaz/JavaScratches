@@ -12,6 +12,9 @@ public class SearchRotatedSortedArray {
     public static int search(int[] nums, int target) {
         int left=0;
         int right = nums.length-1;
+        if (right==0) {
+	    return nums[0];
+	}
         for (int i = 0; i < nums.length; i++) {
     	if (nums[left]==target) {
 	    return left;
