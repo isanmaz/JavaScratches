@@ -2,9 +2,14 @@ package codingproblems;
 
 import java.awt.image.RescaleOp;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class TwoSumTwo {
 
@@ -45,45 +50,6 @@ public class TwoSumTwo {
 	}
 	return arrayResult;
     }
-    public static void main(String[] args) {
-	int[] input = {-1,0};
-	int[] twoSum = alternative(input , 9);
-	
-    }
-    public static int[] alternative(int[] num, int target) {
-	Map<Integer, Integer> indexVsSub = new HashMap<Integer, Integer>();
-	List<Integer> resultIntegers = new ArrayList<Integer>();
-	int temp = 0;
-	for (int i = 0; i < num.length; i++) {
-	    temp= target-num[i];
-	    if (!indexVsSub.containsValue(temp) ) {
-		indexVsSub.put(i,temp);
-	    }
-	}
-	for (int i = 0; i < num.length; i++) {
-	    if (indexVsSub.containsValue(num[i])) {
-		resultIntegers.add(i+1);
-		resultIntegers.add(indexVsSub.get(i)+1);
-	    }
-	}
-	return resultIntegers.stream().mapToInt(Integer::intValue).toArray();
-    }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
